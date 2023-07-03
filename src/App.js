@@ -3,8 +3,8 @@ import { useState } from "react";
 import Counter from "./components/counter/Counter";
 
 const DUMMY_INFO = {
-  username: "abcdef",
-  password: "12345",
+  username: "testuser",
+  password: "abc@1234",
 };
 
 function App() {

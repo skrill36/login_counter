@@ -15,14 +15,24 @@ button {
   background-color: #ffffff;
   color: black;
   border-radius: 12px;
-  margin-right: 1rem;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 label {
   font-size: large;
 }
 
+input {
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
 body {
   background-color: rgb(182, 157, 214);
+}
+
+button:hover,
+button:active {
+  background-color: #dcabe3;
+  border-color: #dcabe3;
 }
