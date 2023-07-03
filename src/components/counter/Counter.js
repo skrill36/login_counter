@@ -19,14 +19,12 @@ const Counter = () => {
         <h1>{value}</h1>
 
         <span>
-          {" "}
           <button className={style.button} onClick={decrHandler}>
             Decrement
           </button>
         </span>
         <span>
           <button className={style.button} onClick={incrHandler}>
-            {" "}
             Increment
           </button>
         </span>
