@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+button {
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.4rem;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 12px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-size: large;
+}
+
+body {
+  background-color: rgb(182, 157, 214);
+}
