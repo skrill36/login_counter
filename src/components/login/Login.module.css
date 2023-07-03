@@ -1,6 +1,11 @@
 h1 {
   text-align: center;
 }
+
+h3 {
+  text-align: center;
+  color: rgb(174, 18, 18);
+}
 button {
   font: inherit;
   font-weight: bold;
