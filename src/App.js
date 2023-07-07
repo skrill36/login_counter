@@ -9,17 +9,29 @@ const DUMMY_INFO = {
 
 function App() {
   const [isValid, setIsValid] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(null);
 
-  const validHandler = (info) => {
-    if (
-      info.username === DUMMY_INFO.username &&
-      info.password === DUMMY_INFO.password
-    ) {
-      setIsValid(true);
-      setError(false);
-    } else {
-      setError(true);
+  const validHandler = async (info) => {
+    const response = await fetch(
+      "https://react-http-3cac6-default-rtdb.firebaseio.com/.json"
+    );
+
+    const data = await response.json();
+
+    console.log(data);
+    if (data && data.users) {
+      for (const key in data.users) {
+        if (
+          info.username === data.users[key].email &&
+          info.password === data.users[key].password
+        ) {
+          setIsValid(true);
+          setError(false);
+          return;
+        } else {
+          setError(true);
+        }
+      }
     }
   };
 
